@@ -1,0 +1,4 @@
+# robots.txt creato per il sito applepier.netsons.org
+
+User-agent: *
+Disallow: 

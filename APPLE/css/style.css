@@ -1,0 +1,619 @@
+@charset "UTF-8";
+
+/* STILI DI BASE ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FASCIA MENU ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#apple_menu {
+    position: sticky;
+    top: 0px;
+    height: 44px;
+    opacity: 0.8;
+    background-color:#000;
+    padding: 0 20px;
+}
+
+#contenitore_menu {
+    height: 100%;
+    max-width: 996px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.ancore_menu {
+    color: white;
+    font-size: 12px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.icons a:not(:first-child) {
+    margin-left: 15px;
+}
+
+.menu_responsive {
+    display: none;
+}
+
+@media only screen and (max-width: 960px) {
+    .ancore_menu {
+        display: none;
+    }
+
+    .menu_responsive {
+        display: block;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+
+
+    .menu_responsive span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .menu_responsive span:nth-child(2) {
+        margin: 5px 0;
+    }
+
+}
+
+
+/* FASCIA ULTIMI PRODOTTI ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.ultimi-prodotti {
+    max-width: 100vw;
+    height: 670px;
+    text-align: center;
+}
+
+.ultimi-prodotti h2,
+.ultimi-prodotti p {
+    color: #fff;
+}
+
+.ultimi-prodotti h2 {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 450;
+}
+
+.ultimi-prodotti p {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-weight: 10;
+}
+
+.ultimi-prodotti a {
+    font-size: 17px;
+    color: #2997ff;
+}
+
+.ultimi-prodotti a:last-child {
+    margin-left: 32px;
+}
+
+@media only screen and (max-width: 960px) {
+    .ultimi-prodotti h2 {
+        font-size: 35px;
+    }
+
+    .ultimi-prodotti p {
+        font-size: 17px;
+    }
+
+    .ultimi-prodotti a {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 610px) {
+    .ultimi-prodotti h2 {
+        font-size:28px;
+    }
+
+    .ultimi-prodotti p {
+        font-size: 14px;
+    }
+
+    .ultimi-prodotti a {
+        font-size:10px;
+    }
+}
+
+
+
+/* iPhone 14 Pro */
+#iphone-pro {
+    background-image: url(../img/hero_iphone14pro__e5xbgo5ffhg2_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+/* iPhone 14 */
+#iphone {
+    background: url(../img/hero_iphone14_preorder__c4g2wjzuugqe_largetall.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+#iphone.ultimi-prodotti h2 {
+    color: #000;
+}
+
+#iphone.ultimi-prodotti p {
+    color: grey;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* AppleWatch */
+#watch {
+    background: url(../img/hero_apple_watch_ultra__dtz0f3e8oscy_largetall.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+#watch .fascia_immagine {
+    padding-top: 60px;
+}
+
+#watch.ultimi-prodotti p {
+    color: #000;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+/*  FASCIA 4----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#quarta_fascia {
+    max-width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.riquadro {
+    width: 49.5%;
+    height: 490;
+    margin-top: 10px;
+}
+
+.fascia_immagine img {
+    padding-top: 30px;
+}
+
+.riquadro a {
+    font-size: 17px;
+    color: #2997ff;
+}
+
+.riquadro a:last-child {
+    margin-left: 32px;
+}
+
+.riquadro p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.riquadro_primo_sinistro {
+    background-image: url(../img/promo_airpods_pro_avail__gaxggskofx6y_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.riquadro_primo_destro {
+    background-image: url(../img/promo_apple_watch_series_8__ch7rexplmihe_large.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.riquadro_secondo_sinistro {
+    background-image: url(../img/promo_apple_watch_se__f9702l6odgi2_large.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.riquadro_secondo_destro {
+    background-image: url(../img/promo-apple-fitness-plus-iphone__bzeal882mv7m_large.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.riquadro_terzo_sinistro {
+    background-image: url(../img/promo_bts__bg3cb4kaoqoi_large.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.riquadro_terzo_destro {
+    background-image: url(../img/promo_macbookair__fywl7i82fueu_large.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#airpods-pro.riquadro_primo_sinistro p,
+#watch-otto.riquadro_primo_destro p {
+    color: #fff;
+}
+
+#airpods-pro.riquadro_primo_sinistro h3 {
+    color: #fff;
+}
+
+.riquadro h3,
+.riquadro h4 {
+    padding-top: 20px;
+}
+
+.riquadro h3,
+.riquadro h4 {
+    font-size: 30px;
+
+}
+
+.riquadro_terzo_sinistro span {
+    color: palevioletred;
+}
+
+#ultima_immagine {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+    #quarta_fascia {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .riquadro {
+        width: 100%;
+    }
+
+    .riquadro p {
+        font-size: 17px;
+    }
+
+    .riquadro a {
+        font-size: 14px;
+    }
+
+    .riquadro h3 h4 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .riquadro {
+        width: 100%;
+    }
+
+    .riquadro p {
+        font-size: 14px;
+    }
+
+    .riquadro a {
+        font-size: 10px;
+    }
+
+    .riquadro h3 h4 {
+        font-size: 28px;
+    }
+}
+
+/* FASCIA APPLETV------------------------------------ */
+
+#fascia_appletv {
+    max-width: 100%;
+    height: 610px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#quadrato_sinistro {
+    height: 600px;
+    width: 19.5%;
+    background-image: url(../img/1250x703.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#quadrato_centrale {
+    height: 600px;
+    width: 60%;
+    background-image: url(../img/1250x703\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#quadrato_destro {
+    height: 600px;
+    width: 19.5%;
+    background-image: url(../img/1250x703\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#fascia_bottone {
+    width: 210px;
+    height: 50px;
+    margin-top: 530px;
+    margin-left: 60px;
+}
+
+.button {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+/* ----------FASCIA PALLINI-------------- */
+
+#contenitore_pallini {
+    width: 330px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.pallini {
+    background-color: #aca9a9;
+    border-radius: 60%;
+    height: 10px;
+    width: 10px;
+}
+
+.nero {
+    background-color: #393838;
+}
+
+
+
+/* ----------FASCIA INFORMAZIONI--------------- */
+
+#fascia_info {
+    background-color: #f5f5f7;
+}
+
+
+
+#info_contenitore {
+    max-width: 980px;
+    height: auto;
+    background-color: #f5f5f7;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 17px;
+    padding-bottom: 11px;
+    border-bottom: solid 2px #d2d2d7;
+}
+
+#info_contenitore ol li {
+    list-style-position: inside;
+}
+
+.infos {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6e6e73;
+    line-height: 1.33337;
+    padding-bottom: 9px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #info_contenitore {
+        padding: 10px 5vw;
+    }
+}
+
+/* INIZIO FASCIA LISTE */
+
+#fascia_liste {
+    max-width: 980px;
+    background-color: #f5f5f7;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 11px;
+}
+
+.box li {
+    list-style: none;
+    line-height: 1.33337;
+}
+
+.classe a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6e6e73;
+    line-height: 2;
+    padding-bottom: 9px;
+}
+
+.classenera a {
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 20px;
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
+
+@media only screen and (max-width: 960px) {
+    #fascia_liste {
+        padding: 10px 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .classe {
+        display: none;
+    }
+
+    .classenera a {
+        padding-top: 0px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #6e6e73;
+    }
+
+    br {
+        display: none;
+    }
+
+    
+
+   }
+
+
+/* @media only screen and (max-width: 960px) {
+    .classe {
+        display: none;
+    }
+} */
+
+/* ---------INIZIO FASCIA FOOTER----------- */
+
+#finale {
+    background-color: #f5f5f7;
+}
+
+#fascia_footer {
+    max-width: 980px;
+    background-color: #f5f5f7;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: solid 2px #d2d2d7;
+}
+
+#footer p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6e6e73;
+    padding-bottom: 8px;
+    padding-top: 20px;
+    
+}
+
+/*------------ FASCIA FINALE--------------- */
+
+#fascia_finale {
+
+    max-width: 980px;
+    background-color: #f5f5f7;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#paragrafo {
+    flex-basis: 50%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6e6e73;
+    padding-top: 10px;
+}
+
+#link a{
+    display: block;
+    margin-left: 450px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6e6e73;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+
+#fascia_footer_due {
+    display: flex;
+     max-width: 980px;
+    background-color: #f5f5f7;
+    margin: 0 auto;
+}
+
+
+
+#fascia_footer_due a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6e6e73;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+@media only screen and (max-width: 960px) {
+    #footer {
+        padding: 10px 5vw;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #finale {
+        padding: 10px 5vw;
+    }
+
+    #link a{
+        margin-left: 0px;
+    }
+}
+
+/* RESPONSIVE */
+
